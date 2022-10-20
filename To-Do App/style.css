@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin:0;
+    background-color: #1d2a35
+}
+h1{
+    color:white;
+    font-family:'Fuzzy Bubbles' ,sans-serif;
+    text-align: center;
+    font-size: 80px;
+}
+form{
+    
+    display: flex;
+    justify-content: center;
+}
+.non_select{
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.add_btn:active{
+    background-color: green;
+}
+ol{
+    margin: 0;
+    padding: 0;
+}
+li::marker{
+    color: white;
+}
+.add_btn{
+    border: 0;
+    cursor: pointer;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 60px;
+    height: 40px;
+    color: white;
+    background-color: #04AA6D;
+}
+.delete_btn{
+    position: absolute;
+    cursor: pointer;
+    top:0;
+    right:0;
+    padding: 8.5px;
+}
+.delete_btn:hover{
+    background-color: #f44336;
+    color: white;
+}
+
+.task{
+    font-size: larger;
+    font-weight: bold;
+    border: 0;
+    padding: 20px;
+    width: 400px;
+    height: 32px;    
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-bottom: 20px;
+}
+.task:focus{
+    outline: none;
+}
+.to_do_task{
+    cursor: pointer;
+    position: relative;
+    color: black;
+    padding: 10px;
+    font-family: 'Mali', cursive;
+}
+.to_do_task:hover{
+    background-color: #ddd;
+}
+.to_do_task:not(li:last-child){
+    border-bottom: 1px solid #1d2a35;
+}
+.list{
+    border-radius: 10px;
+    background-color: white;
+    margin:0 auto;
+    width: 50%;
+}
+.done{
+    text-decoration:line-through;
+    text-decoration-color: #04AA6D;
+}
